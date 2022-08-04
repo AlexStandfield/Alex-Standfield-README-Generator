@@ -19,7 +19,8 @@ const questions = [
     `Please list anyone you'd like to list as a collaborater in the credits section.`,
     `Please select any licenses your application is covered under.`,
     `Please provide your GitHub username to add a link to your GitHub account.`,
-    `Please provide your email address so you may be reached for any additional questions.`
+    `Please provide your email address so you may be reached for any additional questions.`,
+    `Please enter instructions on how you'd like to be contacted.`
 ];
 const licenses = [
     'GNU AFFERO GENERAL PUBLIC LICENSE',
@@ -30,7 +31,7 @@ const licenses = [
     'MIT License',
     'Boost Software License',
     'The Unlicense'
-]
+];
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
@@ -143,6 +144,12 @@ function init() {
                 type: 'input',
                 name: 'email',
                 message: questions[8]
+            },
+            // Questions
+            {
+                type: 'input',
+                name: 'questions',
+                message: questions[9]
             }
         ])
         .then(readmeData => {

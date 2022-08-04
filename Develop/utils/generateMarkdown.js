@@ -151,6 +151,7 @@ ${licenseBadges}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Questions](#questions)
 
 ## Installation
 ${data.installation}
@@ -165,11 +166,10 @@ ${data.credits}
 ${licenseNotices}
 ${licenseLinks}
 
-## GitHub
+## Questions
 ${data.github}
-
-## Email
 ${data.email}
+${data.questions}
 `;
 }
 
