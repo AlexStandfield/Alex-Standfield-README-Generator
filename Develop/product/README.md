@@ -1,9 +1,9 @@
-# alksdfj
+# alskdjf
 
 ## Description
-asd fasd fasdf sadf asdf
+alskdjf aslkdfj alskdjf alskdfj alskdjf
 
-![GNU AFFERO GENERAL PUBLIC LICENSE](https://img.shields.io/badge/license-GNU%20AGPLv3-green),![GNU GENERAL PUBLIC LICENSE](https://img.shields.io/badge/license-GNU%20GPLv3-green),![GNU LESSER GENERAL PUBLIC LICENSE](https://img.shields.io/badge/license-GNU%20LGPLv3-green),![Mozilla Public License](https://img.shields.io/badge/license-MPL--2.0-green)
+![Mozilla Public License](https://img.shields.io/badge/license-MPL--2.0-green),![Apache License](https://img.shields.io/badge/license-Apache--2.0-green),![MIT License](https://img.shields.io/badge/license-MIT-green)
 
 ## Table of Contents
 
@@ -13,22 +13,16 @@ asd fasd fasdf sadf asdf
 - [License](#license)
 
 ## Installation
-asdf
+alsdkjf
 
 ## Usage
-asdf
+alskdfj
 
 ## Credits
-asdf
+alskdjf
 
 ## License
-Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
-      Everyone is permitted to copy and distribute verbatim copies
-      of this license document, but changing it is not allowed.,Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
-      Everyone is permitted to copy and distribute verbatim copies
-      of this license document, but changing it is not allowed.,Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
-      Everyone is permitted to copy and distribute verbatim copies
-      of this license document, but changing it is not allowed.,Each Contributor hereby grants You a world-wide, royalty-free,
+Each Contributor hereby grants You a world-wide, royalty-free,
       non-exclusive license:
       
       (a) under intellectual property rights (other than patent or trademark)
@@ -39,8 +33,21 @@ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
       
       (b) under Patent Claims of such Contributor to make, use, sell, offer
           for sale, have made, import, and otherwise transfer either its
-          Contributions or its Contributor Version.
-https://spdx.org/licenses/AGPL-3.0-or-later.html,https://spdx.org/licenses/GPL-3.0-or-later.html,https://spdx.org/licenses/LGPL-3.0-or-later.html,https://spdx.org/licenses/MPL-2.0.html
+          Contributions or its Contributor Version.,Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.,Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
+      
+      The above copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software.
+https://spdx.org/licenses/MPL-2.0.html ,https://spdx.org/licenses/Apache-2.0.html ,https://spdx.org/licenses/MIT.html 
 
 ## GitHub
 asdf

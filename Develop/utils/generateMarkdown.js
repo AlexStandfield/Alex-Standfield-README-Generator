@@ -96,6 +96,7 @@ const licenses = [
 let licenseBadges = [];
 let licenseLinks = [];
 let licenseNotices = [];
+let licenseSection = '';
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(licensesArr) {
@@ -106,7 +107,6 @@ function renderLicenseBadge(licensesArr) {
       }
     }
   })
-  console.log(licenseBadges);
   return licenseBadges;
 }
 
@@ -116,11 +116,10 @@ function renderLicenseLink(licensesArr) {
   licensesArr.forEach(license => {
     for(let i = 0; i < licenses.length; i++) {
       if (license === licenses[i].name) {
-        licenseLinks.push(licenses[i].link);
+        licenseLinks.push(licenses[i].link + ' ');
       }
     }
   })
-  console.log(...licenseLinks);
   return licenseLinks;
 }
 
@@ -130,11 +129,10 @@ function renderLicenseSection(licensesArr) {
   licensesArr.forEach(license => {
     for(let i = 0; i < licenses.length; i++) {
       if (license === licenses[i].name) {
-        licenseNotices.push(licenses[i].notice);
+        licenseNotices.push(licenses[i].notice) + ' ';
       }
     }
   })
-  console.log(licenseNotices);
   return licenseNotices;
 }
 

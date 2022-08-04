@@ -149,7 +149,6 @@ function init() {
             generateMarkdown.renderLicenseBadge(readmeData.license);
             generateMarkdown.renderLicenseLink(readmeData.license);
             generateMarkdown.renderLicenseSection(readmeData.license);
-            console.log(readmeData.license);
             return readmeData
         })
         .then(readmeData => {
