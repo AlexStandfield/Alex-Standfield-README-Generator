@@ -93,21 +93,21 @@ const licenses = [
       link: 'https://spdx.org/licenses/Unlicense.html'
   },
 ]
-let licenseBadges = [];
-let licenseLinks = [];
-let licenseNotices = [];
+let licenseBadgeSection = '';
+let licenseLinkSection = '';
 let licenseSection = '';
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(licensesArr) {
   licensesArr.forEach(license => {
     for(let i = 0; i < licenses.length; i++) {
       if (license === licenses[i].name) {
-        licenseBadges.push('![' + licenses[i].name +  '](' + licenses[i].badge + ')');
+        return licenseBadgeSection = licenseBadgeSection + '![' + licenses[i].name +  '](' + licenses[i].badge + ')' + ' '
       }
     }
   })
-  return licenseBadges;
+  return licenseBadgeSection;
 }
 
 // TODO: Create a function that returns the license link
@@ -116,11 +116,12 @@ function renderLicenseLink(licensesArr) {
   licensesArr.forEach(license => {
     for(let i = 0; i < licenses.length; i++) {
       if (license === licenses[i].name) {
-        licenseLinks.push(licenses[i].link + ' ');
+        return licenseLinkSection = licenseLinkSection + licenses[i].link + ' '
       }
     }
   })
-  return licenseLinks;
+ 
+  return licenseLinkSection;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -129,11 +130,11 @@ function renderLicenseSection(licensesArr) {
   licensesArr.forEach(license => {
     for(let i = 0; i < licenses.length; i++) {
       if (license === licenses[i].name) {
-        licenseNotices.push(licenses[i].notice) + ' ';
+        licenseSection = licenseSection + licenses[i].name + ' ' + licenses[i].notice + ' '
       }
     }
   })
-  return licenseNotices;
+  return licenseSection;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -143,7 +144,7 @@ function generateMarkdown(data) {
 ## Description
 ${data.descriptionQuestion1} ${data.descriptionQuestion2} ${data.descriptionQuestion3} ${data.descriptionQuestion4} ${data.descriptionQuestion5}
 
-${licenseBadges}
+${renderLicenseBadge(data.license)}
 
 ## Table of Contents
 
@@ -163,8 +164,8 @@ ${data.usage}
 ${data.credits}
 
 ## License
-${licenseNotices}
-${licenseLinks}
+${renderLicenseSection(data.license)}
+${renderLicenseLink(data.license)}
 
 ## Questions
 ${data.github}
@@ -173,4 +174,4 @@ ${data.questions}
 `;
 }
 
-module.exports = {generateMarkdown, renderLicenseBadge, renderLicenseLink, renderLicenseSection}
+module.exports = generateMarkdown

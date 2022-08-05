@@ -153,13 +153,7 @@ function init() {
             }
         ])
         .then(readmeData => {
-            generateMarkdown.renderLicenseBadge(readmeData.license);
-            generateMarkdown.renderLicenseLink(readmeData.license);
-            generateMarkdown.renderLicenseSection(readmeData.license);
-            return readmeData
-        })
-        .then(readmeData => {
-            return generateMarkdown.generateMarkdown(readmeData);
+            return generateMarkdown(readmeData);
         })
         .then(readme => {
             return writeToFile(readme);
